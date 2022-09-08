@@ -9,10 +9,29 @@
 **PHP 7.4** or higher, ``simplexml`` and ``bcmath`` extensions.
 
 ## Installation
-
+Require this package with composer.
 ```bash
 composer require faridbabayev/cbar-currency
+```
+
+#### Copy the package config to your local config with the publish command:
+
+```shell
 php artisan vendor:publish --provider="FaridBabayev\CBARCurrency\CBARCurrencyServiceProvider"
+```
+
+### Laravel without auto-discovery:
+
+If you don't use auto-discovery, add the ServiceProvider to the providers array in config/app.php
+
+```php
+FaridBabayev\CBARCurrency\CBARCurrencyServiceProvider::class
+```
+
+If you want to use the facade to log messages, add this to your facades in app.php:
+
+```php
+'CBAR' => \FaridBabayev\CBARCurrency\Facades\CBAR::class
 ```
 ## Usage
 ### Fetching currencies from CBAR
