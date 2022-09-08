@@ -2,6 +2,7 @@
     "name": "faridbabayev/cbar-currency",
     "description": "PHP library to work with cbar.az currency rates",
     "keywords": ["cbar", "azerbaijan", "azn", "currency"],
+    "homepage": "https://github.com/Faridbabayev001/cbar-currency",
     "minimum-stability": "stable",
     "license": "MIT",
     "type": "library",
@@ -14,7 +15,8 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "ext-simplexml": "*"
+        "ext-simplexml": "*",
+        "ext-bcmath": "*"
     },
     "autoload": {
         "psr-4": {
