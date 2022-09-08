@@ -7,13 +7,13 @@
     "type": "library",
     "authors": [
         {
-            "name": "farid.b",
+            "name": "Farid Babayev",
             "email": "faridbabayev98@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.2|^8.0",
+        "php": "^7.4|^8.0",
         "ext-simplexml": "*"
     },
     "autoload": {
